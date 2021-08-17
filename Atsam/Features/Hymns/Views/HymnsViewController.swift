@@ -16,7 +16,12 @@ class HymnsViewController: BaseViewController {
     var hymnsViewModel: IHymnsViewModel!
     override func getViewModel() -> BaseViewModel { hymnsViewModel as! BaseViewModel }
     
-    fileprivate let searchController = UISearchController(searchResultsController: nil)
+    fileprivate let searchController: UISearchController = {
+        UISearchController(searchResultsController: nil).apply {
+            $0.dimsBackgroundDuringPresentation = false
+            $0.searchBar.font = .comfortaaRegular(size: 14)
+        }
+    }()
     
     override func configureViews() {
         super.configureViews()
@@ -49,7 +54,9 @@ class HymnsViewController: BaseViewController {
             cell.configureView(hymn: hymn)
             
             cell.animateViewOnTapGesture { [weak self] in
-                //self?.searchViewModel.handleVerseSelected(verse)
+                self?.presentViewController(R.storyboard.hymns.hymnDetailsViewController()!.apply {
+                    $0.hymn = hymn
+                })
             }
             
         }.disposed(by: disposeBag)

@@ -20,7 +20,7 @@ class HymnTableViewCell: UITableViewCell {
         hymn.do {
             numberLabel.text = $0.number.string
             hymnTitleLabel.text = $0.title
-            versesLabel.attributedText = $0.formattedVerses
+            versesLabel.text = $0.allVersesString
         }
     }
     
