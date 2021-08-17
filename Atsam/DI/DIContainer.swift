@@ -31,6 +31,14 @@ extension SwinjectStoryboard {
             cntrl.splashViewModel = res.resolve(ISplashViewModel.self)
         }
         
+        defaultContainer.register(IHymnsViewModel.self) {
+            HymnsViewModelImpl(preference: $0.resolve(IPreference.self)!, datasource: $0.resolve(IDatasource.self)!)
+        }
+        
+        defaultContainer.storyboardInitCompleted(HymnsViewController.self) { res, cntrl in
+            cntrl.hymnsViewModel = res.resolve(IHymnsViewModel.self)
+        }
+        
     }
     
     fileprivate static func runRealmMigrations() {

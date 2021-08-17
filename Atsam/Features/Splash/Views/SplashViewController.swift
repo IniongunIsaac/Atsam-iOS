@@ -30,9 +30,8 @@ class SplashViewController: BaseViewController {
     
     fileprivate func observeShowHome() {
         splashViewModel.showHome.bind { [weak self] show in
-            guard let self = self else { return }
             if show {
-                self.showHome()
+                self?.setViewControllers(with: R.storyboard.hymns.hymnsViewController()!, animate: true)
             }
         }.disposed(by: disposeBag)
     }

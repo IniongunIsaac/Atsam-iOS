@@ -24,21 +24,6 @@ class SplashViewModelImpl: BaseViewModel, ISplashViewModel {
     var showHome: PublishSubject<Bool> = PublishSubject()
     var showSetupInProgress: PublishSubject<Bool> = PublishSubject()
     
-//    override func didAppear() {
-//        super.didAppear()
-//        //reset()
-//        setupDB()
-//    }
-    
-    fileprivate func reset() {
-        let realm = try! Realm()
-        debugPrint(realm.configuration.fileURL)
-        try! realm.write {
-            realm.deleteAll()
-            preference.isDBInitialized = false
-        }
-    }
-    
     func setupDB() {
         if preference.isDBInitialized {
             showSetupInProgress.onNext(false)
@@ -57,7 +42,7 @@ class SplashViewModelImpl: BaseViewModel, ISplashViewModel {
         
         let hymns = try! JSONDecoder().decode([HymnData].self, from: Data(contentsOf: Bundle.main.url(forResource: "atsam_a_ikyenge", withExtension: "json")!))
             .enumerated()
-            .map { Hymn(title: $0.element.title, chorus: $0.element.chorus, number: $0.offset, verses: $0.element.verses) }
+            .map { Hymn(title: $0.element.title, chorus: $0.element.chorus, number: $0.offset + 1, verses: $0.element.verses) }
         
         subscribe(datasource.insertHymns(hymns), success: { [weak self] in
             self?.preference.isDBInitialized = true

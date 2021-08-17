@@ -47,6 +47,12 @@
 		1458E66126CBC9DC00A71955 /* HymnData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E66026CBC9DC00A71955 /* HymnData.swift */; };
 		1458E66326CBCA3C00A71955 /* IDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E66226CBCA3C00A71955 /* IDatasource.swift */; };
 		1458E66526CBCA5F00A71955 /* DatasourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E66426CBCA5F00A71955 /* DatasourceImpl.swift */; };
+		1458E66B26CBF94700A71955 /* IHymnsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E66A26CBF94700A71955 /* IHymnsViewModel.swift */; };
+		1458E66D26CBF96400A71955 /* HymnsViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E66C26CBF96400A71955 /* HymnsViewModelImpl.swift */; };
+		1458E66F26CBF9B400A71955 /* HymnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E66E26CBF9B400A71955 /* HymnsViewController.swift */; };
+		1458E67126CBFA3E00A71955 /* HymnDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E67026CBFA3E00A71955 /* HymnDetailsViewController.swift */; };
+		1458E67326CBFA9500A71955 /* Hymns.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67226CBFA9500A71955 /* Hymns.storyboard */; };
+		1458E67526CC199C00A71955 /* HymnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E67426CC199C00A71955 /* HymnTableViewCell.swift */; };
 		1470728326BC06460088C8D3 /* TextViewWithPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470728226BC06460088C8D3 /* TextViewWithPlaceholder.swift */; };
 		1487476E26BD551800DA5155 /* Numbers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487476D26BD551700DA5155 /* Numbers+Extensions.swift */; };
 		1488103126B9D16B007096C4 /* RxRealm in Frameworks */ = {isa = PBXBuildFile; productRef = 1488103026B9D16B007096C4 /* RxRealm */; };
@@ -142,6 +148,12 @@
 		1458E66026CBC9DC00A71955 /* HymnData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnData.swift; sourceTree = "<group>"; };
 		1458E66226CBCA3C00A71955 /* IDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDatasource.swift; sourceTree = "<group>"; };
 		1458E66426CBCA5F00A71955 /* DatasourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceImpl.swift; sourceTree = "<group>"; };
+		1458E66A26CBF94700A71955 /* IHymnsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IHymnsViewModel.swift; sourceTree = "<group>"; };
+		1458E66C26CBF96400A71955 /* HymnsViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnsViewModelImpl.swift; sourceTree = "<group>"; };
+		1458E66E26CBF9B400A71955 /* HymnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnsViewController.swift; sourceTree = "<group>"; };
+		1458E67026CBFA3E00A71955 /* HymnDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnDetailsViewController.swift; sourceTree = "<group>"; };
+		1458E67226CBFA9500A71955 /* Hymns.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hymns.storyboard; sourceTree = "<group>"; };
+		1458E67426CC199C00A71955 /* HymnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnTableViewCell.swift; sourceTree = "<group>"; };
 		1466B84926C49C5100A0DBFA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1466B84B26C49F2C00A0DBFA /* appstore-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appstore-badge.png"; sourceTree = "<group>"; };
 		1470728226BC06460088C8D3 /* TextViewWithPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWithPlaceholder.swift; sourceTree = "<group>"; };
@@ -251,6 +263,7 @@
 		14121C7E247464E00073814F /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				1458E66626CBF91200A71955 /* Hymns */,
 				14121C83247465740073814F /* Splash */,
 				14121C82247465650073814F /* Launch */,
 				1440E0542479EEFF0037E68E /* Base */,
@@ -448,6 +461,43 @@
 				1440E05A247AABBE0037E68E /* AlertType.swift */,
 			);
 			path = "Custom Alert";
+			sourceTree = "<group>";
+		};
+		1458E66626CBF91200A71955 /* Hymns */ = {
+			isa = PBXGroup;
+			children = (
+				1458E66926CBF92C00A71955 /* ViewModel */,
+				1458E66826CBF92500A71955 /* Views */,
+				1458E66726CBF91D00A71955 /* Storyboards */,
+			);
+			path = Hymns;
+			sourceTree = "<group>";
+		};
+		1458E66726CBF91D00A71955 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1458E67226CBFA9500A71955 /* Hymns.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1458E66826CBF92500A71955 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1458E66E26CBF9B400A71955 /* HymnsViewController.swift */,
+				1458E67026CBFA3E00A71955 /* HymnDetailsViewController.swift */,
+				1458E67426CC199C00A71955 /* HymnTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1458E66926CBF92C00A71955 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1458E66A26CBF94700A71955 /* IHymnsViewModel.swift */,
+				1458E66C26CBF96400A71955 /* HymnsViewModelImpl.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1466B84A26C49C8400A0DBFA /* Screenshots */ = {
@@ -652,6 +702,7 @@
 				1458E65D26CBC09D00A71955 /* atsam_a_ikyenge.json in Resources */,
 				142BFFB526C36BC0008380F8 /* Andes Rounded W03 Book.ttf in Resources */,
 				148B0F3B26BE357500B92B26 /* comfortaa_light.ttf in Resources */,
+				1458E67326CBFA9500A71955 /* Hymns.storyboard in Resources */,
 				148B0F2D26BE357500B92B26 /* comfortaa_medium.ttf in Resources */,
 				142BFFB326C36BC0008380F8 /* Andes Rounded W03 UltraLight.ttf in Resources */,
 				142BFFB226C36BC0008380F8 /* Andes Rounded W03 Black.ttf in Resources */,
@@ -820,10 +871,13 @@
 				14BD52AF26C027C100AF3D80 /* RxView+Extensions.swift in Sources */,
 				14BD529126BFFE3600AF3D80 /* BaseBottomPopupViewController.swift in Sources */,
 				148862CD26B7E6FD0004F4C3 /* Preference+Utils.swift in Sources */,
+				1458E67526CC199C00A71955 /* HymnTableViewCell.swift in Sources */,
+				1458E66D26CBF96400A71955 /* HymnsViewModelImpl.swift in Sources */,
 				1440E05B247AABBE0037E68E /* AlertType.swift in Sources */,
 				14CD21A5247D609000EF0A32 /* ViewWithBorderAttributes.swift in Sources */,
 				14CD21AF247E229900EF0A32 /* Reactive+Extensions.swift in Sources */,
 				1487476E26BD551800DA5155 /* Numbers+Extensions.swift in Sources */,
+				1458E66F26CBF9B400A71955 /* HymnsViewController.swift in Sources */,
 				1440E070247AC0C60037E68E /* SplashViewModelImpl.swift in Sources */,
 				1440E072247AF64D0037E68E /* ISplashViewModel.swift in Sources */,
 				14BD529A26C0091900AF3D80 /* NumberView.swift in Sources */,
@@ -843,8 +897,10 @@
 				14377BF4246DE214005B0795 /* AppDelegate.swift in Sources */,
 				1488103326B9D5E7007096C4 /* TabOption.swift in Sources */,
 				14121E1E24788F280073814F /* PreferenceImpl.swift in Sources */,
+				1458E66B26CBF94700A71955 /* IHymnsViewModel.swift in Sources */,
 				14377BF6246DE214005B0795 /* SceneDelegate.swift in Sources */,
 				149531CF2506792D00A6E9DD /* R.generated.swift in Sources */,
+				1458E67126CBFA3E00A71955 /* HymnDetailsViewController.swift in Sources */,
 				1458E66126CBC9DC00A71955 /* HymnData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -78,6 +78,11 @@ extension Collection {
 }
 
 extension String {
+    
+    var isNumber: Bool {
+        rangeOfCharacter(from: CharacterSet.decimalDigits.inverted) == nil
+    }
+    
     func chunkFormatted(withChunkSize chunkSize: Int = 4, withSeparator separator: Character = " ") -> String {
         return self.filter { $0 != separator }.chunk(n: chunkSize).map{ String($0) }.joined(separator: String(separator))
     }
@@ -102,6 +107,14 @@ extension String {
     
     func copyToClipboard() {
         UIPasteboard.general.string = self
+    }
+    
+    var int: Int? {
+        Int(self)
+    }
+    
+    func insensitiveContains(_ value: String) -> Bool {
+        lowercased().localizedCaseInsensitiveContains(value.lowercased())
     }
     
 }

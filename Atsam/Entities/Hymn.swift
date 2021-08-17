@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import AttributedStringBuilder
 
 class Hymn: Object {
     @Persisted(primaryKey: true) var _id: ObjectId
@@ -16,8 +17,22 @@ class Hymn: Object {
     @Persisted var number: Int
     @Persisted var verses: List<String>
     
-    init(title: String, chorus: String, number: Int, verses: [String]) {
-        super.init()
+    var versesArray: [String] { verses.toArray() }
+    var allVersesString: String { versesArray.joined() }
+    var formattedVerses: NSAttributedString {
+        let attrs = AttributedStringBuilder()
+        
+        for (index, verse) in versesArray.enumerated() {
+            attrs.text("\(index + 1). ", attributes: [.font(.comfortaaSemiBold(size: 15))])
+            .text(verse, attributes: [.font(.comfortaaRegular(size: 15))])
+            .newlines(2)
+        }
+        
+        return attrs.attributedString
+    }
+    
+    convenience init(title: String, chorus: String, number: Int, verses: [String]) {
+        self.init()
         self.title = title
         self.chorus = chorus
         self.number = number
