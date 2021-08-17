@@ -53,6 +53,11 @@
 		1458E67126CBFA3E00A71955 /* HymnDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E67026CBFA3E00A71955 /* HymnDetailsViewController.swift */; };
 		1458E67326CBFA9500A71955 /* Hymns.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67226CBFA9500A71955 /* Hymns.storyboard */; };
 		1458E67526CC199C00A71955 /* HymnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1458E67426CC199C00A71955 /* HymnTableViewCell.swift */; };
+		1458E68026CC3BC300A71955 /* comfortaa_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67B26CC3BC200A71955 /* comfortaa_medium.ttf */; };
+		1458E68126CC3BC300A71955 /* comfortaa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67C26CC3BC300A71955 /* comfortaa.ttf */; };
+		1458E68226CC3BC300A71955 /* comfortaa_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67D26CC3BC300A71955 /* comfortaa_bold.ttf */; };
+		1458E68326CC3BC300A71955 /* comfortaa_semi_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67E26CC3BC300A71955 /* comfortaa_semi_bold.ttf */; };
+		1458E68426CC3BC300A71955 /* comfortaa_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1458E67F26CC3BC300A71955 /* comfortaa_light.ttf */; };
 		1470728326BC06460088C8D3 /* TextViewWithPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470728226BC06460088C8D3 /* TextViewWithPlaceholder.swift */; };
 		1487476E26BD551800DA5155 /* Numbers+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1487476D26BD551700DA5155 /* Numbers+Extensions.swift */; };
 		1488103126B9D16B007096C4 /* RxRealm in Frameworks */ = {isa = PBXBuildFile; productRef = 1488103026B9D16B007096C4 /* RxRealm */; };
@@ -61,11 +66,6 @@
 		148862CD26B7E6FD0004F4C3 /* Preference+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148862CC26B7E6FD0004F4C3 /* Preference+Utils.swift */; };
 		148862CF26B7E92B0004F4C3 /* BaseRealmDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148862CE26B7E92B0004F4C3 /* BaseRealmDatasource.swift */; };
 		148862D126B7E9EE0004F4C3 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148862D026B7E9EE0004F4C3 /* UIViewController+Extensions.swift */; };
-		148B0F0E26BE357500B92B26 /* comfortaa_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148B0EDA26BE356E00B92B26 /* comfortaa_bold.ttf */; };
-		148B0F1126BE357500B92B26 /* comfortaa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148B0EDD26BE356E00B92B26 /* comfortaa.ttf */; };
-		148B0F2326BE357500B92B26 /* comfortaa_semi_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148B0EEF26BE357100B92B26 /* comfortaa_semi_bold.ttf */; };
-		148B0F2D26BE357500B92B26 /* comfortaa_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148B0EF926BE357200B92B26 /* comfortaa_medium.ttf */; };
-		148B0F3B26BE357500B92B26 /* comfortaa_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148B0F0726BE357500B92B26 /* comfortaa_light.ttf */; };
 		148B0F4626BE5B1C00B92B26 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B0F4526BE5B1C00B92B26 /* BaseView.swift */; };
 		149531C62506773800A6E9DD /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 149531C52506773800A6E9DD /* .gitignore */; };
 		149531CB2506783C00A6E9DD /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 149531CA2506783C00A6E9DD /* Podfile.lock */; };
@@ -154,6 +154,11 @@
 		1458E67026CBFA3E00A71955 /* HymnDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnDetailsViewController.swift; sourceTree = "<group>"; };
 		1458E67226CBFA9500A71955 /* Hymns.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hymns.storyboard; sourceTree = "<group>"; };
 		1458E67426CC199C00A71955 /* HymnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HymnTableViewCell.swift; sourceTree = "<group>"; };
+		1458E67B26CC3BC200A71955 /* comfortaa_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_medium.ttf; sourceTree = "<group>"; };
+		1458E67C26CC3BC300A71955 /* comfortaa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa.ttf; sourceTree = "<group>"; };
+		1458E67D26CC3BC300A71955 /* comfortaa_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_bold.ttf; sourceTree = "<group>"; };
+		1458E67E26CC3BC300A71955 /* comfortaa_semi_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_semi_bold.ttf; sourceTree = "<group>"; };
+		1458E67F26CC3BC300A71955 /* comfortaa_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_light.ttf; sourceTree = "<group>"; };
 		1466B84926C49C5100A0DBFA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1466B84B26C49F2C00A0DBFA /* appstore-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "appstore-badge.png"; sourceTree = "<group>"; };
 		1470728226BC06460088C8D3 /* TextViewWithPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWithPlaceholder.swift; sourceTree = "<group>"; };
@@ -163,11 +168,6 @@
 		148862CC26B7E6FD0004F4C3 /* Preference+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preference+Utils.swift"; sourceTree = "<group>"; };
 		148862CE26B7E92B0004F4C3 /* BaseRealmDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRealmDatasource.swift; sourceTree = "<group>"; };
 		148862D026B7E9EE0004F4C3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		148B0EDA26BE356E00B92B26 /* comfortaa_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_bold.ttf; sourceTree = "<group>"; };
-		148B0EDD26BE356E00B92B26 /* comfortaa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa.ttf; sourceTree = "<group>"; };
-		148B0EEF26BE357100B92B26 /* comfortaa_semi_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_semi_bold.ttf; sourceTree = "<group>"; };
-		148B0EF926BE357200B92B26 /* comfortaa_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_medium.ttf; sourceTree = "<group>"; };
-		148B0F0726BE357500B92B26 /* comfortaa_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = comfortaa_light.ttf; sourceTree = "<group>"; };
 		148B0F4526BE5B1C00B92B26 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		149531C52506773800A6E9DD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		149531CA2506783C00A6E9DD /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
@@ -321,6 +321,11 @@
 		14121C84247465900073814F /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1458E67D26CC3BC300A71955 /* comfortaa_bold.ttf */,
+				1458E67F26CC3BC300A71955 /* comfortaa_light.ttf */,
+				1458E67B26CC3BC200A71955 /* comfortaa_medium.ttf */,
+				1458E67E26CC3BC300A71955 /* comfortaa_semi_bold.ttf */,
+				1458E67C26CC3BC300A71955 /* comfortaa.ttf */,
 				142BFFA826C36BBF008380F8 /* Andes Rounded W03 Black.ttf */,
 				142BFFA626C36BBF008380F8 /* Andes Rounded W03 Bold.ttf */,
 				142BFFAB26C36BC0008380F8 /* Andes Rounded W03 Book.ttf */,
@@ -331,11 +336,6 @@
 				142BFFAA26C36BC0008380F8 /* Andes Rounded W03 Regular.ttf */,
 				142BFFAD26C36BC0008380F8 /* Andes Rounded W03 SemiBold.ttf */,
 				142BFFA926C36BBF008380F8 /* Andes Rounded W03 UltraLight.ttf */,
-				148B0EDA26BE356E00B92B26 /* comfortaa_bold.ttf */,
-				148B0F0726BE357500B92B26 /* comfortaa_light.ttf */,
-				148B0EF926BE357200B92B26 /* comfortaa_medium.ttf */,
-				148B0EEF26BE357100B92B26 /* comfortaa_semi_bold.ttf */,
-				148B0EDD26BE356E00B92B26 /* comfortaa.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -691,23 +691,23 @@
 			files = (
 				1440E06E247ABA040037E68E /* Splash.storyboard in Resources */,
 				14BD529826C008EB00AF3D80 /* NumberView.xib in Resources */,
-				148B0F0E26BE357500B92B26 /* comfortaa_bold.ttf in Resources */,
 				142BFFB026C36BC0008380F8 /* Andes Rounded W03 Bold.ttf in Resources */,
 				14377C00246DE218005B0795 /* LaunchScreen.storyboard in Resources */,
-				148B0F1126BE357500B92B26 /* comfortaa.ttf in Resources */,
 				149531CB2506783C00A6E9DD /* Podfile.lock in Resources */,
+				1458E68126CC3BC300A71955 /* comfortaa.ttf in Resources */,
 				142BFFB626C36BC0008380F8 /* Andes Rounded W03 ExtraBold.ttf in Resources */,
 				14377BFD246DE218005B0795 /* Assets.xcassets in Resources */,
-				148B0F2326BE357500B92B26 /* comfortaa_semi_bold.ttf in Resources */,
 				1458E65D26CBC09D00A71955 /* atsam_a_ikyenge.json in Resources */,
 				142BFFB526C36BC0008380F8 /* Andes Rounded W03 Book.ttf in Resources */,
-				148B0F3B26BE357500B92B26 /* comfortaa_light.ttf in Resources */,
 				1458E67326CBFA9500A71955 /* Hymns.storyboard in Resources */,
-				148B0F2D26BE357500B92B26 /* comfortaa_medium.ttf in Resources */,
 				142BFFB326C36BC0008380F8 /* Andes Rounded W03 UltraLight.ttf in Resources */,
 				142BFFB226C36BC0008380F8 /* Andes Rounded W03 Black.ttf in Resources */,
 				142BFFAF26C36BC0008380F8 /* Andes Rounded W03 Light.ttf in Resources */,
+				1458E68226CC3BC300A71955 /* comfortaa_bold.ttf in Resources */,
+				1458E68026CC3BC300A71955 /* comfortaa_medium.ttf in Resources */,
+				1458E68326CC3BC300A71955 /* comfortaa_semi_bold.ttf in Resources */,
 				142BFFB126C36BC0008380F8 /* Andes Rounded W03 ExtraLight.ttf in Resources */,
+				1458E68426CC3BC300A71955 /* comfortaa_light.ttf in Resources */,
 				142BFFAE26C36BC0008380F8 /* Andes Rounded W03 Medium.ttf in Resources */,
 				149531C62506773800A6E9DD /* .gitignore in Resources */,
 				142BFFB426C36BC0008380F8 /* Andes Rounded W03 Regular.ttf in Resources */,

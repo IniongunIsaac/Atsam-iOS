@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class HymnsViewController: BaseViewController {
     
@@ -14,12 +15,29 @@ class HymnsViewController: BaseViewController {
     
     var hymnsViewModel: IHymnsViewModel!
     override func getViewModel() -> BaseViewModel { hymnsViewModel as! BaseViewModel }
-
+    
+    fileprivate let searchController = UISearchController(searchResultsController: nil)
+    
     override func configureViews() {
         super.configureViews()
-        title = "Atsam a Ikyenge"
+        configureNavigationBar()
         setupHymnsTableView()
         hymnsViewModel.getHymns()
+    }
+    
+    fileprivate func configureNavigationBar() {
+        hideNavBar(false)
+        title = "Atsam a Ikyenge"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.searchController = searchController
+        searchController.searchBar.font = .comfortaaRegular(size: 14)
+        searchController.searchBar.rx.text.orEmpty
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .distinctUntilChanged()
+            .observe(on: MainScheduler.instance)
+            .bind { [weak self] text in
+                self?.hymnsViewModel.filterHymns(text: text)
+            }.disposed(by: disposeBag)
     }
     
     fileprivate func setupHymnsTableView() {

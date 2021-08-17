@@ -313,7 +313,7 @@ extension UICollectionView {
         messageLabel.textColor = .darkGray
         messageLabel.numberOfLines = 0;
         messageLabel.textAlignment = .center;
-        messageLabel.font = .comfortaaMedium(size: 14)
+        messageLabel.font = .comfortaaBold(size: 14)
         messageLabel.sizeToFit()
 
         self.backgroundView = messageLabel;
@@ -334,7 +334,7 @@ extension UITableView {
         messageLabel.textColor = .darkGray
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
-        messageLabel.font = .comfortaaMedium(size: 14)
+        messageLabel.font = .comfortaaBold(size: 14)
         messageLabel.sizeToFit()
 
         self.backgroundView = messageLabel
