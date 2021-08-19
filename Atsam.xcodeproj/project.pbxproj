@@ -169,6 +169,11 @@
 		148862CE26B7E92B0004F4C3 /* BaseRealmDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRealmDatasource.swift; sourceTree = "<group>"; };
 		148862D026B7E9EE0004F4C3 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		148B0F4526BE5B1C00B92B26 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		148BD01026CDE26B00DDC49D /* screenshot_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot_2.png; sourceTree = "<group>"; };
+		148BD01126CDE26C00DDC49D /* screenshot_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot_1.png; sourceTree = "<group>"; };
+		148BD01226CDE26C00DDC49D /* screenshot_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot_4.png; sourceTree = "<group>"; };
+		148BD01326CDE26C00DDC49D /* screenshot_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot_3.png; sourceTree = "<group>"; };
+		148BD01426CDE3F700DDC49D /* google-play-badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-play-badge.png"; sourceTree = "<group>"; };
 		149531C52506773800A6E9DD /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		149531CA2506783C00A6E9DD /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 		149531CE2506792D00A6E9DD /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
@@ -503,6 +508,11 @@
 		1466B84A26C49C8400A0DBFA /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				148BD01426CDE3F700DDC49D /* google-play-badge.png */,
+				148BD01126CDE26C00DDC49D /* screenshot_1.png */,
+				148BD01026CDE26B00DDC49D /* screenshot_2.png */,
+				148BD01326CDE26C00DDC49D /* screenshot_3.png */,
+				148BD01226CDE26C00DDC49D /* screenshot_4.png */,
 				1466B84B26C49F2C00A0DBFA /* appstore-badge.png */,
 			);
 			path = Screenshots;
