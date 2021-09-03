@@ -17,6 +17,9 @@ class HymnTableViewCell: UITableViewCell {
     @IBOutlet weak var versesLabel: UILabel!
     
     func configureView(hymn: Hymn) {
+        if currentDevice.isPad {
+            numberView.cornerRadius = 40
+        }
         hymn.do {
             numberLabel.text = $0.number.string
             hymnTitleLabel.text = $0.title

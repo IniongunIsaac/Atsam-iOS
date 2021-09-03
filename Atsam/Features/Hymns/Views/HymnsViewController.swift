@@ -16,10 +16,11 @@ class HymnsViewController: BaseViewController {
     var hymnsViewModel: IHymnsViewModel!
     override func getViewModel() -> BaseViewModel { hymnsViewModel as! BaseViewModel }
     
+    fileprivate let fontsize = currentDevice.isPad ? 18 : 14
+    
     fileprivate let searchController: UISearchController = {
         UISearchController(searchResultsController: nil).apply {
             $0.dimsBackgroundDuringPresentation = false
-            $0.searchBar.font = .comfortaaRegular(size: 14)
         }
     }()
     
@@ -39,7 +40,7 @@ class HymnsViewController: BaseViewController {
         title = "Atsam a Ikyenge"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.searchController = searchController
-        searchController.searchBar.font = .comfortaaRegular(size: 14)
+        searchController.searchBar.font = .comfortaaRegular(size: fontsize.cgfloat)
         searchController.searchBar.rx.text.orEmpty
             .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
             .distinctUntilChanged()

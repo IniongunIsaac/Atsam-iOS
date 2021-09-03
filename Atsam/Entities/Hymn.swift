@@ -20,12 +20,14 @@ class Hymn: Object {
     var versesArray: [String] { verses.toArray() }
     var allVersesString: String { versesArray.joined() }
     var formattedVerses: NSAttributedString {
+        let fontsize = (currentDevice.isPad ? 22 : 15).cgfloat
+        let numberFontsize = (currentDevice.isPad ? 24 : 16).cgfloat
         let attrs = AttributedStringBuilder()
         
         for (index, verse) in versesArray.enumerated() {
-            attrs.text("\(index + 1). ", attributes: [.font(.comfortaaSemiBold(size: 16)), .alignment(.center)])
+            attrs.text("\(index + 1). ", attributes: [.font(.comfortaaSemiBold(size: numberFontsize)), .alignment(.center)])
                 .newline()
-                .text(verse, attributes: [.font(.comfortaaRegular(size: 15)), .alignment(.center)])
+                .text(verse, attributes: [.font(.comfortaaRegular(size: fontsize)), .alignment(.center)])
                 .newlines(2)
         }
         

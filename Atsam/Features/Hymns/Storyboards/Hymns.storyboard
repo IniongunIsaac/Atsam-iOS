@@ -59,13 +59,20 @@
                                                                                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                                                                    </variation>
                                                                                 </label>
                                                                             </subviews>
                                                                             <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                                             <constraints>
                                                                                 <constraint firstItem="gaV-2C-0Fl" firstAttribute="centerX" secondItem="FRy-eD-adz" secondAttribute="centerX" id="4Jl-sQ-Xaf"/>
-                                                                                <constraint firstAttribute="width" constant="50" id="JXJ-td-IYv"/>
-                                                                                <constraint firstAttribute="height" constant="50" id="hNG-Xa-6ch"/>
+                                                                                <constraint firstAttribute="width" constant="50" id="JXJ-td-IYv">
+                                                                                    <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                                                </constraint>
+                                                                                <constraint firstAttribute="height" constant="50" id="hNG-Xa-6ch">
+                                                                                    <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                                                </constraint>
                                                                                 <constraint firstItem="gaV-2C-0Fl" firstAttribute="centerY" secondItem="FRy-eD-adz" secondAttribute="centerY" id="mbs-33-uUl"/>
                                                                             </constraints>
                                                                             <userDefinedRuntimeAttributes>
@@ -83,6 +90,9 @@
                                                                                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                                                                    </variation>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51I-BT-A0z">
                                                                                     <rect key="frame" x="0.0" y="25" width="279" height="33.5"/>
@@ -90,6 +100,9 @@
                                                                                     <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="20"/>
+                                                                                    </variation>
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
@@ -210,14 +223,21 @@
                                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="rQY-oY-m0D" firstAttribute="centerX" secondItem="5SG-gf-iQ7" secondAttribute="centerX" id="PsP-Lb-pbT"/>
-                                                    <constraint firstAttribute="height" constant="50" id="jVw-Wm-Zle"/>
+                                                    <constraint firstAttribute="height" constant="50" id="jVw-Wm-Zle">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
                                                     <constraint firstItem="rQY-oY-m0D" firstAttribute="centerY" secondItem="5SG-gf-iQ7" secondAttribute="centerY" id="qdZ-Mj-sM4"/>
-                                                    <constraint firstAttribute="width" constant="50" id="u4r-aj-WJ1"/>
+                                                    <constraint firstAttribute="width" constant="50" id="u4r-aj-WJ1">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                                    </constraint>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -230,6 +250,9 @@
                                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -238,6 +261,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                             </stackView>
@@ -251,16 +277,24 @@
                                                 <rect key="frame" x="12.5" y="12.5" width="25" height="25"/>
                                                 <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="25" id="ia6-dN-kN8"/>
-                                                    <constraint firstAttribute="width" constant="25" id="xXN-51-X1C"/>
+                                                    <constraint firstAttribute="height" constant="25" id="ia6-dN-kN8">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="25" id="xXN-51-X1C">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                    </constraint>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="JEm-Hr-5ZP"/>
+                                            <constraint firstAttribute="width" constant="50" id="JEm-Hr-5ZP">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
                                             <constraint firstItem="aUh-WX-bBV" firstAttribute="centerY" secondItem="Ra1-Sx-l8p" secondAttribute="centerY" id="pZ2-Tq-MiM"/>
-                                            <constraint firstAttribute="height" constant="50" id="tbr-To-V64"/>
+                                            <constraint firstAttribute="height" constant="50" id="tbr-To-V64">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
                                             <constraint firstItem="aUh-WX-bBV" firstAttribute="centerX" secondItem="Ra1-Sx-l8p" secondAttribute="centerX" id="vld-I2-ZyQ"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -276,16 +310,24 @@
                                                 <rect key="frame" x="12.5" y="12.5" width="25" height="25"/>
                                                 <color key="tintColor" systemColor="secondaryLabelColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="25" id="a4A-ze-V1Z"/>
-                                                    <constraint firstAttribute="width" constant="25" id="kqI-cK-n5g"/>
+                                                    <constraint firstAttribute="height" constant="25" id="a4A-ze-V1Z">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="25" id="kqI-cK-n5g">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                                    </constraint>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="rqc-eh-LWD" firstAttribute="centerX" secondItem="r6t-1l-Ovb" secondAttribute="centerX" id="FzK-L7-EzP"/>
-                                            <constraint firstAttribute="height" constant="50" id="Pw1-xn-GBP"/>
-                                            <constraint firstAttribute="width" constant="50" id="s4o-xF-hiA"/>
+                                            <constraint firstAttribute="height" constant="50" id="Pw1-xn-GBP">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="50" id="s4o-xF-hiA">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="80"/>
+                                            </constraint>
                                             <constraint firstItem="rqc-eh-LWD" firstAttribute="centerY" secondItem="r6t-1l-Ovb" secondAttribute="centerY" id="uCN-1X-v3S"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
@@ -338,6 +380,9 @@
                                 <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="20"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPs-sc-qbG">
                                 <rect key="frame" x="20" y="57" width="374" height="148"/>
@@ -349,6 +394,9 @@ Thank you!</string>
                                 <fontDescription key="fontDescription" name="Comfortaa-Medium" family="Comfortaa" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Comfortaa-Medium" family="Comfortaa" pointSize="20"/>
+                                </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="viq-5H-kFd" userLabel="Buttons Stack View">
                                 <rect key="frame" x="20" y="235" width="374" height="55"/>
@@ -371,6 +419,9 @@ Thank you!</string>
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Comfortaa-SemiBold" family="Comfortaa" pointSize="18"/>
+                                        </variation>
                                         <connections>
                                             <action selector="updateNowButtonTapped:" destination="Jv5-Pw-Nn9" eventType="touchUpInside" id="3AG-op-cqF"/>
                                         </connections>

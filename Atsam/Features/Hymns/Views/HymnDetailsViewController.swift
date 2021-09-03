@@ -23,15 +23,24 @@ class HymnDetailsViewController: BottomPopupViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if currentDevice.isPad {
+            numberView.cornerRadius = 40
+            shareView.cornerRadius = 15
+            copyView.cornerRadius = 15
+        }
+        
+        let fontsize = (currentDevice.isPad ? 20 : 15).cgfloat
+        
         hymn.do {
             numberLabel.text = $0.number.string
             hymnTitleLabel.text = $0.title
             versesLabel.attributedText = $0.formattedVerses
             if $0.chorus.isNotEmpty {
                 chorusLabel.attributedText = AttributedStringBuilder()
-                    .text("Chorus:", attributes: [.font(.comfortaaBold(size: 15)), .alignment(.center)])
+                    .text("Chorus:", attributes: [.font(.comfortaaBold(size: fontsize)), .alignment(.center)])
                     .newline()
-                    .text("\($0.chorus)", attributes: [.font(.comfortaaRegular(size: 15)), .alignment(.center)])
+                    .text("\($0.chorus)", attributes: [.font(.comfortaaRegular(size: fontsize)), .alignment(.center)])
                     .attributedString
             } else {
                 chorusLabel.showView(false)
@@ -49,7 +58,7 @@ class HymnDetailsViewController: BottomPopupViewController {
         }
     }
     
-    override var popupHeight: CGFloat { height - 100 }
+    override var popupHeight: CGFloat { height - (currentDevice.isPad ? 150 : 100) }
     
     override var popupTopCornerRadius: CGFloat { 20 }
 
