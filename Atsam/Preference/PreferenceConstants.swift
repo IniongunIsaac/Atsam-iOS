@@ -12,4 +12,6 @@ struct PreferenceConstants {
     static let DB_INITIALIZED_KEY = "DatabaseInitialized"
     
     static let STAY_AWAKE = "StayAwake"
+    
+    static let APP_VERSION = "iosAppVersion"
 }

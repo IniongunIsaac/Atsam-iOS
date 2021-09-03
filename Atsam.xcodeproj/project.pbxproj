@@ -13,6 +13,8 @@
 		14121E1E24788F280073814F /* PreferenceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14121E1D24788F280073814F /* PreferenceImpl.swift */; };
 		14121E2024788F360073814F /* PreferenceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14121E1F24788F360073814F /* PreferenceConstants.swift */; };
 		14121E2724792BDD0073814F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14121E2624792BDD0073814F /* DIContainer.swift */; };
+		1420731A26E2BAE800B29797 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1420731926E2BAE800B29797 /* GoogleService-Info.plist */; };
+		1420731C26E2BD8B00B29797 /* AppUpdateDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420731B26E2BD8B00B29797 /* AppUpdateDialogViewController.swift */; };
 		142BFFAE26C36BC0008380F8 /* Andes Rounded W03 Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 142BFFA426C36BBF008380F8 /* Andes Rounded W03 Medium.ttf */; };
 		142BFFAF26C36BC0008380F8 /* Andes Rounded W03 Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 142BFFA526C36BBF008380F8 /* Andes Rounded W03 Light.ttf */; };
 		142BFFB026C36BC0008380F8 /* Andes Rounded W03 Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 142BFFA626C36BBF008380F8 /* Andes Rounded W03 Bold.ttf */; };
@@ -108,6 +110,9 @@
 		14121E1D24788F280073814F /* PreferenceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceImpl.swift; sourceTree = "<group>"; };
 		14121E1F24788F360073814F /* PreferenceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceConstants.swift; sourceTree = "<group>"; };
 		14121E2624792BDD0073814F /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		1420731926E2BAE800B29797 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1420731B26E2BD8B00B29797 /* AppUpdateDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUpdateDialogViewController.swift; sourceTree = "<group>"; };
+		1420731D26E2BE4C00B29797 /* Atsam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Atsam.entitlements; sourceTree = "<group>"; };
 		142BFFA426C36BBF008380F8 /* Andes Rounded W03 Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andes Rounded W03 Medium.ttf"; sourceTree = "<group>"; };
 		142BFFA526C36BBF008380F8 /* Andes Rounded W03 Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andes Rounded W03 Light.ttf"; sourceTree = "<group>"; };
 		142BFFA626C36BBF008380F8 /* Andes Rounded W03 Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andes Rounded W03 Bold.ttf"; sourceTree = "<group>"; };
@@ -368,6 +373,7 @@
 		14377BE7246DE213005B0795 = {
 			isa = PBXGroup;
 			children = (
+				1420731926E2BAE800B29797 /* GoogleService-Info.plist */,
 				1466B84926C49C5100A0DBFA /* README.md */,
 				149531CE2506792D00A6E9DD /* R.generated.swift */,
 				149531CA2506783C00A6E9DD /* Podfile.lock */,
@@ -394,6 +400,7 @@
 		14377BF2246DE214005B0795 /* Atsam */ = {
 			isa = PBXGroup;
 			children = (
+				1420731D26E2BE4C00B29797 /* Atsam.entitlements */,
 				1466B84A26C49C8400A0DBFA /* Screenshots */,
 				14121C81247465070073814F /* App Files */,
 				14121C80247464F80073814F /* Resources */,
@@ -492,6 +499,7 @@
 				1458E66E26CBF9B400A71955 /* HymnsViewController.swift */,
 				1458E67026CBFA3E00A71955 /* HymnDetailsViewController.swift */,
 				1458E67426CC199C00A71955 /* HymnTableViewCell.swift */,
+				1420731B26E2BD8B00B29797 /* AppUpdateDialogViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -715,6 +723,7 @@
 				142BFFAF26C36BC0008380F8 /* Andes Rounded W03 Light.ttf in Resources */,
 				1458E68226CC3BC300A71955 /* comfortaa_bold.ttf in Resources */,
 				1458E68026CC3BC300A71955 /* comfortaa_medium.ttf in Resources */,
+				1420731A26E2BAE800B29797 /* GoogleService-Info.plist in Resources */,
 				1458E68326CC3BC300A71955 /* comfortaa_semi_bold.ttf in Resources */,
 				142BFFB126C36BC0008380F8 /* Andes Rounded W03 ExtraLight.ttf in Resources */,
 				1458E68426CC3BC300A71955 /* comfortaa_light.ttf in Resources */,
@@ -909,6 +918,7 @@
 				14121E1E24788F280073814F /* PreferenceImpl.swift in Sources */,
 				1458E66B26CBF94700A71955 /* IHymnsViewModel.swift in Sources */,
 				14377BF6246DE214005B0795 /* SceneDelegate.swift in Sources */,
+				1420731C26E2BD8B00B29797 /* AppUpdateDialogViewController.swift in Sources */,
 				149531CF2506792D00A6E9DD /* R.generated.swift in Sources */,
 				1458E67126CBFA3E00A71955 /* HymnDetailsViewController.swift in Sources */,
 				1458E66126CBC9DC00A71955 /* HymnData.swift in Sources */,
@@ -1079,16 +1089,20 @@
 			baseConfigurationReference = 96176694E4C3ED476CDD66D4 /* Pods-Atsam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Atsam/Atsam.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Atsam/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iniongungroup.mobile.ios.Atsam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ATSAM_DEVELOPMENT_PROFILE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1099,16 +1113,20 @@
 			baseConfigurationReference = B070055119C7FE0DE257C054 /* Pods-Atsam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Atsam/Atsam.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
-				EXCLUDED_ARCHS = arm64;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = Atsam/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iniongungroup.mobile.ios.Atsam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ATSAM_DEVELOPMENT_PROFILE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

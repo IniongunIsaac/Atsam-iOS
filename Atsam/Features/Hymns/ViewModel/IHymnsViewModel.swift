@@ -13,6 +13,8 @@ protocol IHymnsViewModel: Scopable {
     
     var hymns: PublishSubject<[Hymn]> { get }
     
+    var hasUpdate: Bool { get }
+    
     func getHymns()
     
     func filterHymns(text: String)

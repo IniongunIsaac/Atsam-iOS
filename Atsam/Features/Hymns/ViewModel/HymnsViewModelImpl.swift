@@ -22,6 +22,8 @@ class HymnsViewModelImpl: BaseViewModel, IHymnsViewModel {
         self.datasource = datasource
     }
     
+    var hasUpdate: Bool { preference.appVersion > appVersion }
+    
     func getHymns() {
         subscribe(datasource.getAllHymns(), success: { [weak self] hymns in
             self?.hymnsList = hymns

@@ -28,6 +28,10 @@ class HymnsViewController: BaseViewController {
         configureNavigationBar()
         setupHymnsTableView()
         hymnsViewModel.getHymns()
+        
+        if hymnsViewModel.hasUpdate {
+            showDialog(for: R.storyboard.hymns.appUpdateDialogViewController()!)
+        }
     }
     
     fileprivate func configureNavigationBar() {

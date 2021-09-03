@@ -14,4 +14,6 @@ protocol IPreference {
     
     var stayAwake: Bool { get set }
     
+    var appVersion: String { get }
+    
 }
